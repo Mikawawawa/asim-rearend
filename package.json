@@ -1,0 +1,35 @@
+{
+  "name": "aerosimulate",
+  "version": "1.0.0",
+  "description": "",
+  "pkg": {
+    "assets": [
+      "public/**/*"
+    ]
+  },
+  "main": "index.js",
+  "scripts": {
+    "serve": "forever start index.js",
+    "dev": "node start.js && node index.js",
+    "pkg": "pkg index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Maktub",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "connect-multiparty": "^2.2.0",
+    "cookie-parser": "^1.4.3",
+    "cos-nodejs-sdk-v5": "^2.5.6",
+    "express": "^4.16.3",
+    "express-form-data": "^2.0.8",
+    "http-error": "0.0.6",
+    "http-errors": "^1.7.0",
+    "js-md5": "^0.7.3",
+    "md5": "^2.2.1",
+    "morgan": "^1.9.1",
+    "multer": "^1.4.1",
+    "mysql": "^2.16.0",
+    "nodemailer": "^5.1.1"
+  }
+}
