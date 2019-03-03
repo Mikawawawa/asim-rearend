@@ -1,6 +1,6 @@
 {
   "static": "public",
-  "port": 80,
+  "port": 9008,
   "pagePath": "public/page/",
   "mode": "cos",
   "mport": 8201,
