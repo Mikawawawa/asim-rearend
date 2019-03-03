@@ -13,7 +13,8 @@
     "database": "asim",
     "port": 3306,
     "charset": "UTF8_GENERAL_CI",
-    "debug": false
+    "debug": false,
+    "useConnectionPooling": true
   },
   "mail": {
     "outlook": {
