@@ -9,15 +9,15 @@ const config = require("../config.json");
 //     charset: "UTF8_GENERAL_CI",
 //     debug: false
 // });
-const connection = mysql.createPool(config.db);
-// connection.connect();
-// connection.on("connect", err => {
-//   if (err) {
-//     console.error("error connecting: " + err.stack);
-//     return;
-//   }
-//   console.log("db:ok");
-// });
+const connection = mysql.createConnection(config.db);
+connection.connect();
+connection.on("connect", err => {
+  if (err) {
+    console.error("error connecting: " + err.stack);
+    return;
+  }
+  console.log("db:ok");
+});
 
 module.exports = connection;
 
