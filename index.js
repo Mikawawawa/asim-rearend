@@ -14,7 +14,7 @@ const userRouter = require("./route/user");
 const app = express();
 
 app.use(logger("dev"));
-app.use(express.json());
+app.use(express.json({ limit: "100000kb" }));
 app.use(
   express.urlencoded({
     extended: false
