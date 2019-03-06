@@ -22,7 +22,7 @@ exports.putUser = async (dbname, firstname, lastname, regoin, email, paper) => {
   let data = await connection.execute(
     "INSERT INTO `asim`.`" +
       dbname +
-      "`(`firstname`, `lastname`, `region`, `paper`, `email`) VALUES (?, ?, ?, ?, )",
+      "`(`firstname`, `lastname`, `region`, `paper`, `email`) VALUES (?, ?, ?, ?, ?)",
     [firstname, lastname, regoin, paper, email]
   );
   console.log(data);
