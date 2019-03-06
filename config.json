@@ -32,8 +32,8 @@
       "secureConnection": true,
       "port": 465,
       "auth": {
-        "user": "exmaple@163.com",
-        "pass": "yourpassword"
+        "user": "AISM2019@163.com",
+        "pass": "AISMHDU123"
       }
     }
   },
