@@ -20,8 +20,10 @@ function timeFormatter(value) {
 
 exports.putUser = async (dbname, firstname, lastname, regoin, email, paper) => {
   let data = await connection.execute(
-    "INSERT INTO `asim`.`?`(`firstname`, `lastname`, `region`, `paper`, `email`) VALUES (?, ?, ?, ?, ?)",
-    [dbname, firstname, lastname, regoin, paper, email]
+    "INSERT INTO `asim`.`" +
+      dbname +
+      "`(`firstname`, `lastname`, `region`, `paper`, `email`) VALUES (?, ?, ?, ?, )",
+    [firstname, lastname, regoin, paper, email]
   );
   console.log(data);
   return data;
