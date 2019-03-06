@@ -6,7 +6,12 @@ const sendToCos = require("../models/cos");
 const saveAs = require("../models/file");
 
 var multer = require("multer");
-var upload = multer({ dest: "upload/", limits: "10mb" });
+var upload = multer({
+  dest: "upload/",
+  limits: {
+    fieldSize: 1024000
+  }
+});
 app.post("/paper", upload.array("file", 12), function(req, res) {
   // req.files is array of `photos` files
   // req.body will contain the text fields, if there were any
