@@ -5,7 +5,6 @@
   "mode": "cos",
   "mport": 8201,
   "mhost": "101.132.116.211",
-  "domin": "file.mcfhq.com/",
   "db": {
     "host": "101.132.116.211",
     "user": "root",
@@ -22,8 +21,8 @@
       "port": 587,
       "secure": false,
       "auth": {
-        "user": "lancelotnemoj@outlook.com",
-        "pass": "lanc374869"
+        "user": "example@outlook.com",
+        "pass": "password"
       }
     },
     "netcast": {
