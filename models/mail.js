@@ -4,7 +4,7 @@ const outlook = config.mail.outlook;
 const netcast = config.mail.netcast;
 const crud = require("./crud");
 
-inuse = outlook;
+inuse = netcast;
 const transporter = nodemailer.createTransport(inuse);
 
 function setMail(to, subject = "", text = "", file = "", name = "") {
