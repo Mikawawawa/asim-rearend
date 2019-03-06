@@ -9,7 +9,7 @@ var multer = require("multer");
 var upload = multer({
   dest: "upload/",
   limits: {
-    fieldSize: 1024000
+    fileSize: 1024000
   }
 });
 app.post("/paper", upload.array("file", 12), function(req, res) {
